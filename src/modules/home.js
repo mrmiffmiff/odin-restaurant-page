@@ -4,10 +4,6 @@ function showHome() {
     const home = document.createElement("div");
     home.id = "home";
 
-    const mainHeader = document.createElement("h1");
-    mainHeader.textContent = "Oakland Kosher Pizza";
-    home.appendChild(mainHeader);
-
     const secondHeader = document.createElement("h2");
     secondHeader.textContent = "Grand Opening 20XX";
     home.appendChild(secondHeader);
