@@ -1,3 +1,4 @@
-import "../node_modules/modern-normalize/modern-normalize.css"
+import "../node_modules/modern-normalize/modern-normalize.css";
+import showHome from "./modules/home";
 
-console.log("Test");
+showHome();
