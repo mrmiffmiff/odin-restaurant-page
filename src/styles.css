@@ -1,0 +1,50 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+    background: navy url("./assets/pictures/pizza.jpg") repeat-y center/cover;
+}
+
+header {
+    justify-self: center;
+    background-color: #ACD3A8;
+    padding: 0 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#content {
+    background-color: rgb(234, 234, 166);
+    padding: 10px;
+    margin: 0 15%;
+    min-height: 400px;
+    display: grid;
+}
+
+#content>div {
+    width: 60%;
+    margin: auto;
+    background-color: teal;
+    padding: 5px;
+    align-self: center;
+}
+
+@media screen and (min-width: 451px) and (max-width: 700px) {
+    #content>div {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #content>div {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+h2 {
+    text-align: center;
+}
