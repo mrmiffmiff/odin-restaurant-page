@@ -1,13 +1,20 @@
+* {
+    --beige: #F6F1DE;
+    --navy: #3E3F5B;
+    --teal: #8AB2A6;
+    --sage: #ACD3A8;
+}
+
 body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr;
-    background: navy url("./assets/pictures/pizza.jpg") repeat-y center/cover;
+    background: var(--navy) url("./assets/pictures/pizza.jpg") repeat-y center/cover;
 }
 
 header {
     justify-self: center;
-    background-color: #ACD3A8;
+    background-color: var(--sage);
     padding: 0 10px;
 }
 
@@ -17,7 +24,7 @@ nav {
 }
 
 #content {
-    background-color: rgb(234, 234, 166);
+    background-color: var(--beige);
     padding: 10px;
     margin: 0 15%;
     min-height: 400px;
@@ -27,7 +34,7 @@ nav {
 #content>div {
     width: 60%;
     margin: auto;
-    background-color: teal;
+    background-color: var(--teal);
     padding: 5px;
     align-self: center;
 }
